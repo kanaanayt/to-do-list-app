@@ -16,7 +16,7 @@ function newItem()
 
   li.on('dblclick', function()
   {
-    li.addClass("strike");
+    li.toggleClass("strike");
   });
 
   let crossOutButton = document.createElement("crossOutButton");
@@ -24,7 +24,7 @@ function newItem()
   crossOutButton.appendChild(x);
   li.append(crossOutButton);
 
-  li.on('click', function()
+  crossOutButton.on('click', function()
   {
     li.addClass("delete");
   });
