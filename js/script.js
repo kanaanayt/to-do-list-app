@@ -21,7 +21,7 @@ function newItem()
 
   let crossOutButton = document.createElement("crossOutButton");
   let x = document.createTextNode("X");
-  crossOutButton.appendChild(x);
+  crossOutButton.append(x);
   li.append(crossOutButton);
 
   crossOutButton.on('click', function()
