@@ -24,7 +24,7 @@ function newItem()
   // crossOutButton.appendChild(x);
   // li.append(crossOutButton);
 
-  let crossOutButton = $('<crossOutButton></crossOutButton');
+  let crossOutButton = $('<crossOutButton></crossOutButton>');
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
 
