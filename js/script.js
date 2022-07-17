@@ -19,9 +19,13 @@ function newItem()
     li.toggleClass("strike");
   });
 
-  let crossOutButton = document.createElement("crossOutButton");
-  let x = document.createTextNode("X");
-  crossOutButton.appendChild(x);
+  // let crossOutButton = document.createElement("crossOutButton");
+  // let x = document.createTextNode("X");
+  // crossOutButton.appendChild(x);
+  // li.append(crossOutButton);
+
+  let crossOutButton = $('<crossOutButton></crossOutButton');
+  crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
 
   crossOutButton.on('click', function func()
